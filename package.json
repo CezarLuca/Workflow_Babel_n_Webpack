@@ -1,0 +1,18 @@
+{
+  "name": "workflow_babel_n_webpack",
+  "version": "1.0.0",
+  "description": "Tutorial for Babel and Webpack with Ninja",
+  "main": "index.js",
+  "scripts": {
+    "babel": "npx babel src/index.js -w -o dist/assets/bundle.js",
+    "babelTest": "node_modules/.bin/babel src/index.js -o dist/assets/bundle.js",
+    "babelTest2": "\"node_modules\\.bin\\babel\" src/index.js -o dist/assets/bundle.js"
+  },
+  "author": "Luca Cezar",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.5",
+    "@babel/preset-env": "^7.23.5"
+  }
+}
