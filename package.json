@@ -4,7 +4,11 @@
   "description": "Tutorial for Babel and Webpack with Ninja",
   "main": "index.js",
   "scripts": {
-    "babel": "npx babel src/index.js -w -o dist/assets/bundle.js",
+    "webpack": "webpack",
+    "babel": "babel src/index.js -w -o dist/assets/bundle.js",
+    "babel2": "npx babel src/index.js -w -o dist/assets/bundle.js",
+    "webpack3": "npx webpack --watch",
+    "webpack2": "\"node_modules\\.bin\\webpack\"",
     "babelTest": "node_modules/.bin/babel src/index.js -o dist/assets/bundle.js",
     "babelTest2": "\"node_modules\\.bin\\babel\" src/index.js -o dist/assets/bundle.js"
   },
@@ -13,6 +17,8 @@
   "devDependencies": {
     "@babel/cli": "^7.23.4",
     "@babel/core": "^7.23.5",
-    "@babel/preset-env": "^7.23.5"
+    "@babel/preset-env": "^7.23.5",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   }
 }
