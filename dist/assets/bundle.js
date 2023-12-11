@@ -1,1 +1,1 @@
-(()=>{const o=o=>`Hello ${o}`;console.log(o("Cezar")),console.log(o("Zoe"))})();
+(()=>{"use strict";console.log("DOM File");const e=document.querySelector("body"),o=()=>{e.style.background="peachpuff"},l=o=>{const l=document.createElement("h1");l.textContent=o,e.appendChild(l)};o(),l("Hello, World from DOM File"),console.log("Index File"),l("Hello, World from Index File"),o(),console.log("cezar.luca@hotmail.com")})();
